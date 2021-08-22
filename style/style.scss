@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+$PaleBlue: hsl(225, 100%, 94%);
+$BrightBlue: hsl(245, 75%, 52%);
+$DarkBlue: hsl(223, 47%, 23%);
+$DesBlue: hsl(224, 23%, 55%);
+$VeryPaleBlue: hsl(225, 100%, 98%);
+$font: "Red Hat Display", serif;
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+	background: $PaleBlue;
+	background-image: url("../images/pattern-background-desktop.svg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: top;
+	display: flex;
+	justify-content: center;
+}
+.container {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	justify-self: flex-end;
+	//padding-top: 50px;
+	justify-self: center;
+	align-self: center;
+	margin-top: 100px;
+}
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background: white;
+	border-radius: 20px;
+	z-index: 5;
+	width: 400px;
+	position: relative;
+	align-self: center;
+	justify-self: center;
+	box-shadow: rgba(22%, 16%, 88%, 0.2) 0px 0px 40px 0;
+}
+.text {
+	/*display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;*/
+	margin-top: 25px;
+	font-family: $font;
+	text-align: center;
+	width: 350px;
+	position: relative;
+	h1 {
+		font-weight: 900;
+		color: $DarkBlue;
+		font-size: 25px;
+	}
+	p {
+		padding-top: 15px;
+		font-size: 16px;
+		color: $DesBlue;
+	}
+}
+.ill {
+	img {
+		border-radius: 20px 20px 0 0;
+		width: 100%;
+	}
+}
+.plan {
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	display: flex;
+	background: $VeryPaleBlue;
+	border-radius: 10px;
+	padding: 20px;
+	.plan-price {
+		h2 {
+			color: $DarkBlue;
+			font-size: 15px;
+			font-weight: 900;
+		}
+		h3 {
+			font-size: 15px;
+			color: $DesBlue;
+			font-weight: 500;
+			padding-top: 3px;
+		}
+	}
+}
+.icon {
+	padding-right: 20px;
+}
+.change {
+	padding-left: 70px;
+	color: $BrightBlue;
+	font-size: 13px;
+	font-weight: 700;
+}
+.primary-button {
+	color: white;
+	background-color: $BrightBlue;
+	text-decoration: none;
+	border-radius: 10px;
+	padding: 12px 95px;
+	margin-top: 30px;
+	font-size: 12px;
+	font-weight: 500;
+	box-shadow: rgba(22%, 16%, 88%, 0.5) 0px 0px 30px -1px;
+}
+.sec-button {
+	color: $DesBlue;
+	font-weight: 700;
+	text-decoration: none;
+	font-size: 13px;
+	padding-top: 25px;
+	padding-bottom: 30px;
+}
+@media (max-width: 465px) {
+	body {
+		background-image: url(../images/pattern-background-mobile.svg);
+	}
+	.primary-button {
+		//width: 20vw;
+		font-weight: 900;
+		font-size: 15px;
+		padding: 15px 65px;
+		text-align: center;
+		justify-content: center;
+	}
+	.sec-button {
+		font-weight: 900;
+	}
+	.container {
+		width: 90%;
+		margin-top: 60px;
+		.card {
+			width: 95%;
+			margin: 0;
+			padding: 0;
+		}
+
+		.text {
+			max-width: 80%;
+		}
+		.plan {
+			max-width: 70%;
+			margin: 25px 0 0 0;
+			padding: 10px 25px;
+			.icon {
+				padding: 0 20px 0 20px;
+			}
+			.change {
+				padding-right: 20px;
+				padding-left: 43px;
+			}
+			.plan-price {
+				padding: 0;
+				margin: 0;
+				width: 100%;
+				h2 {
+					font-size: 14px;
+					font-weight: 900;
+				}
+				h3 {
+					font-size: 15px;
+					font-weight: 500;
+				}
+			}
+		}
+	}
+}

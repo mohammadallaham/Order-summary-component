@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  background: #e0e8ff;
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-self: flex-end;
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-top: 100px;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: white;
+  border-radius: 20px;
+  z-index: 5;
+  width: 400px;
+  position: relative;
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: center;
+  -webkit-box-shadow: rgba(56, 41, 224, 0.2) 0px 0px 40px 0;
+          box-shadow: rgba(56, 41, 224, 0.2) 0px 0px 40px 0;
+}
+
+.text {
+  /*display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;*/
+  margin-top: 25px;
+  font-family: "Red Hat Display", serif;
+  text-align: center;
+  width: 350px;
+  position: relative;
+}
+
+.text h1 {
+  font-weight: 900;
+  color: #1f2f56;
+  font-size: 25px;
+}
+
+.text p {
+  padding-top: 15px;
+  font-size: 16px;
+  color: #7280a7;
+}
+
+.ill img {
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+}
+
+.plan {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #f5f7ff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.plan .plan-price h2 {
+  color: #1f2f56;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.plan .plan-price h3 {
+  font-size: 15px;
+  color: #7280a7;
+  font-weight: 500;
+  padding-top: 3px;
+}
+
+.icon {
+  padding-right: 20px;
+}
+
+.change {
+  padding-left: 70px;
+  color: #3829e0;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.primary-button {
+  color: white;
+  background-color: #3829e0;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 12px 95px;
+  margin-top: 30px;
+  font-size: 12px;
+  font-weight: 500;
+  -webkit-box-shadow: rgba(56, 41, 224, 0.5) 0px 0px 30px -1px;
+          box-shadow: rgba(56, 41, 224, 0.5) 0px 0px 30px -1px;
+}
+
+.sec-button {
+  color: #7280a7;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 13px;
+  padding-top: 25px;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 465px) {
+  body {
+    background-image: url(../images/pattern-background-mobile.svg);
+  }
+  .primary-button {
+    font-weight: 900;
+    font-size: 15px;
+    padding: 15px 65px;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sec-button {
+    font-weight: 900;
+  }
+  .container {
+    width: 90%;
+    margin-top: 60px;
+  }
+  .container .card {
+    width: 95%;
+    margin: 0;
+    padding: 0;
+  }
+  .container .text {
+    max-width: 80%;
+  }
+  .container .plan {
+    max-width: 70%;
+    margin: 25px 0 0 0;
+    padding: 10px 25px;
+  }
+  .container .plan .icon {
+    padding: 0 20px 0 20px;
+  }
+  .container .plan .change {
+    padding-right: 20px;
+    padding-left: 43px;
+  }
+  .container .plan .plan-price {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .container .plan .plan-price h2 {
+    font-size: 14px;
+    font-weight: 900;
+  }
+  .container .plan .plan-price h3 {
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+/*# sourceMappingURL=style.css.map */
